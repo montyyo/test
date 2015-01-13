@@ -38,6 +38,29 @@ public class Test
       }
       System.out.println( "la suma de los digitos entre 0 y 10 es : " + sum);
        
-       
    }
+   
+   /**
+    * Implementa un método llamado sumValuesInterval que reciba dos
+    * parámetros enteros a y b y muestre la suma de los valores comprendidos entre dichos parámetros
+    * (ambos incluidos).
+    */
+   
+   public void sumValuesInterval(int num1 , int num2)
+   {
+       int lim_sup = num1;//limite inferior
+      int lim_inf= num2;//limite superior
+      int sum=0;//acumulador
+      while(lim_sup <= lim_inf) //condicion
+      {
+          
+          sum = lim_sup + sum; //suma de acumulador 
+          lim_sup= lim_sup+1; //suma a limite hasta llegar a limite superior
+          
+      }
+      System.out.println( "la suma de los digitos entre "  + num1 + " y " + num2 + " es "  + sum);
+       
+    
+   }
+   
 }
