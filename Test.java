@@ -63,4 +63,30 @@ public class Test
     
    }
    
+   
+   /**
+    * Implementa un método llamado isPrime(int n) que devuelva verdadero si
+    * el parámetro n es primo o falso en caso contrario. Debes usar un bucle while 
+    * que divida el número entre todos los valores comprendidos entre 2 y (n -1).
+    * Si alguna de estas divisiones da de resto 0, entonces el número no es primo.
+    */
+   
+   public boolean isPrime(int n)
+   {
+      int lim_inf = 2; //limite inferior
+      int  lim_sup = n-1; // limite superior
+      boolean prueba = true; // boleano de resultado
+       
+       while(lim_inf < n -1  ) // mientras no llegemos al numero - 1 comprobamos si es primo
+       {
+           if (n % lim_inf == 0) // si la div no es 0 es primo
+           {
+               prueba = false; // si entramos en el if quiere decir que se puede div y no es primo
+               
+           }
+           lim_inf = lim_inf +1 ; // sig numero del rango entre 2 y n-1
+       }
+       
+       return prueba; // resultado boleano
+   }
 }
