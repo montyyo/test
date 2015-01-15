@@ -25,7 +25,20 @@ public class Test2
    }
    
    
-   
+   /**
+    * metodo para hacer divisiones 
+    */
+   public int divEnteros(int divi , int divisor)
+   {
+       int resultado =divi   ;
+       for ( int factor=1; resultado >= divisor;){
+           resultado = resultado - divisor;
+           factor ++;
+        
+       }
+       
+       return resultado;
+   }
 }
     
 
