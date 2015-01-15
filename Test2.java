@@ -30,7 +30,23 @@ public class Test2
     */
    public int divEnteros(int divi , int divisor)
    {
-       int resultado =divi   ;
+       int resultado =divi;
+       int factor = 1;
+       for ( factor=1; resultado >= divisor;){
+           resultado = resultado - divisor;
+           factor ++;
+        
+       }
+       
+       return resultado + factor -1;
+   }
+   
+   /**
+    * metodo para hacer modulos 
+    */
+   public int mod(int divi , int divisor )
+   {
+       int resultado =divi ;
        for ( int factor=1; resultado >= divisor;){
            resultado = resultado - divisor;
            factor ++;
