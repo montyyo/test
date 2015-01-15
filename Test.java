@@ -8,7 +8,7 @@ public class Test
    public void multiplesOfFive()
    {
       int inicial = 10;//limite inferior y contador
-      int limite=94;//limite superior
+      int limite=95;//limite superior
      
       while ( inicial < limite ) // condicion
       {
@@ -17,11 +17,12 @@ public class Test
              System.out.println(inicial); // impresion en pantalla de multiplo
             
          }
+         //podria sumarse despues 1 al contador incluye el 95 por ello sumamos antes.
       }
    }
    
    /**
-    * . Implementa un método llamado sumValues que saque por pantalla la suma
+    *  Implementa un método llamado sumValues que saque por pantalla la suma
     * de los números comprendidos entre el 0 y el 10 (ambos incluidos) haciendo uso de un bucle while.
     */
    public void sumValues()
@@ -48,7 +49,7 @@ public class Test
    
    public void sumValuesInterval(int num1 , int num2)
    {
-       int lim_sup = num1;//limite inferior
+      int lim_sup = num1;//limite inferior
       int lim_inf= num2;//limite superior
       int sum=0;//acumulador
       while(lim_sup <= lim_inf) //condicion
@@ -77,9 +78,9 @@ public class Test
       int  lim_sup = n-1; // limite superior
       boolean prueba = true; // boleano de resultado
        
-       while(lim_inf < n -1  ) // mientras no llegemos al numero - 1 comprobamos si es primo
+       while(lim_inf < n   ) // mientras no llegemos al numero - 1 comprobamos si es primo
        {
-           if (n % lim_inf == 0) // si la div no es 0 es primo
+           if (n % lim_inf == 0 ) // si la div no es 0 es primo 
            {
                prueba = false; // si entramos en el if quiere decir que se puede div y no es primo
                
@@ -89,4 +90,5 @@ public class Test
        
        return prueba; // resultado boleano
    }
-}
+   
+ }
