@@ -55,6 +55,23 @@ public class Test2
        
        return resultado;
    }
+   
+     /**
+    * metodo para hacer potencias 
+    */
+   public int potencias(int num , int potencia )
+   {
+       int resultado =num ;
+       
+       for ( int factor=1; factor < potencia;){
+           resultado =  multEnteros(resultado,num);
+           factor ++;
+        
+       }
+       
+       return resultado;
+   }
+   
 }
     
 
